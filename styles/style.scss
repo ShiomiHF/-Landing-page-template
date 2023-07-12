@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Moul&family=Poppins:wght@200;300;400;600;900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+$black: #262626;
+$navy: #4254a0;
+
+@mixin btn {
+  width: fit-content;
+  border-radius: 35.5px;
+  padding: 20px 64px 20px 64px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+
+  /* general */
+  h1 {
+    font-size: 45px;
+    color: #fff;
+    @media (min-width: 768px) {
+      color: #fff;
+      font-size: 85px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 100%;
+      margin: 0 0 45px 0;
+    }
+  }
+
+  h2 {
+    color: $black;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    @media (min-width: 768px) {
+      font-size: 22.6px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 34px;
+    }
+  }
+
+  .btn-navy {
+    @include btn;
+    background-color: $navy;
+    color: #fff;
+  }
+  .m-btn {
+    padding: 22px 64px;
+    font-size: 16px;
+    display: block;
+    margin: 40px auto;
+    @media (min-width: 768px) {
+      padding: 22px 64px;
+      font-size: 26px;
+    }
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+  .d-btn {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+    }
+  }
+
+  //   Main
+  #hero {
+    background-image: url(/img/fond-1.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 1024px) {
+      background-position: center;
+    }
+
+    // header
+    header {
+      padding: 30px 0;
+      width: 90%;
+      margin: auto;
+      @media (min-width: 1024px) {
+        width: 80%;
+        padding: 100px 0;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          @media (min-width: 768px) {
+            gap: 40px;
+          }
+
+          .m-logo {
+            display: block;
+            @media (min-width: 768px) {
+              display: none;
+            }
+          }
+
+          .d-logo {
+            display: none;
+            @media (min-width: 768px) {
+              display: block;
+            }
+          }
+        }
+        p {
+          color: #fff;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 100%;
+          @media (min-width: 768px) {
+            font-size: 34px;
+          }
+        }
+      }
+    }
+    // Section hero
+    .h-container {
+      margin: auto;
+      display: flex;
+      width: 88%;
+      margin: auto;
+      flex-direction: column;
+      text-align: center;
+      @media (min-width: 1024px) {
+        padding: 60px 0;
+        text-align: left;
+        width: 80%;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+
+      .h-left {
+        width: 100%;
+        @media (min-width: 1024px) {
+          width: 50%;
+        }
+
+        p {
+          color: #fff;
+          margin: 0 0 60px 0;
+          width: 100%;
+          @media (min-width: 1024px) {
+            width: 54%;
+          }
+        }
+      }
+
+      .h-right {
+        width: 100%;
+        text-align: right;
+        @media (min-width: 1024px) {
+          width: 50%;
+        }
+
+        img {
+          width: 100%;
+          flex-shrink: 0;
+          @media (min-width: 1024px) {
+            width: 534px;
+            height: 535px;
+          }
+        }
+      }
+    }
+  }
+}
