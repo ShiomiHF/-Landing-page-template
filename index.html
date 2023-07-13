@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <title>Devoir CSS 02</title>
   </head>
   <body>
@@ -39,7 +43,17 @@
           <div class="btn-navy m-btn"><a>Get started</a></div>
         </div>
       </div>
-      <div class="arrow"><lottie-player src=“https://lottie.host/4ab4213b-7a00-4902-a418-bd78ad63e001/OQAjyKgxwS.json” background=“#fff” speed=“1” style=“width: 300px; height: 300px” direction=“1” mode=“normal” loop controls autoplay></lottie-player></div>
+      <div class="arrow">
+        <lottie-player
+          src="https://lottie.host/4ab4213b-7a00-4902-a418-bd78ad63e001/OQAjyKgxwS.json"
+          speed="1"
+          style="width: 100px; height: 100px"
+          direction="1"
+          mode="normal"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
     </section>
     <section id="features">
       <div class="f-description">
@@ -53,36 +67,52 @@
       </div>
 
       <div class="f-container">
-        <article class="f-article">
-          <img src="/img/IMG02.png" alt="" />
-          <h3>LOREM IPSUM</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisc-</p>
-        </article>
-        <article class="f-article">
-          <img src="/img/IMG02.png" alt="" />
-          <h3>LOREM IPSUM</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisc-</p>
-        </article>
-        <article class="f-article">
-          <img src="/img/IMG02.png" alt="" />
-          <h3>LOREM IPSUM</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisc-</p>
-        </article>
+        <div class="f-articles">
+          <article class="f-article">
+            <img src="/img/IMG02.png" alt="" />
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisc-</p>
+          </article>
+          <article class="f-article">
+            <img src="/img/IMG02.png" alt="" />
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisc-</p>
+          </article>
+          <article class="f-article">
+            <img src="/img/IMG02.png" alt="" />
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisc-</p>
+          </article>
+        </div>
       </div>
 
       <div class="get-start">
         <div class="get-start-container">
           <h4>LOREM IPSUM DOLOR SIT AMET</h4>
           <div class="get-start-input">
-            <input type="email" name="mail" id="mail" />
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Lorem ipsum dolor sit"
+            />
             <div class="btn-navy"><a>Get started</a></div>
           </div>
         </div>
       </div>
     </section>
     <section id="video">
+      <h2>VIDEO</h2>
       <div class="v-video">
-        <video src=""><source /></video>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ZRtdQ81jPUQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
       <div class="v-description">
         <div class="v-left">
@@ -91,11 +121,17 @@
             Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
             nonummy nibh euismod tincidunt ut lapreet dolore magna aliquam erat
             volutpet, Ut wisi enim ad minim veniam, quis noslrud exerci taticn
-            ullamcorpbr Lorem ipsum dolor sit amet consectetur adipiscing elit
-            sed diam nonummy nibh euismod tincidunt ut lapreet dolore magna
-            aliquam erat volutpet, Ut wisi enim ad minim veniam, quis noslrud
-            exerci taticn ullamcorp <br />Lorem ipsum dolor sit amet consectetur
-            adipiscing elit sed diam nonummy nibh.
+            ullamcorp
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
+            nonummy nibh euismod tincidunt ut lapreet dolore magna aliquam erat
+            volutpet, Ut wisi enim ad minim veniam, quis noslrud exerci taticn
+            ullamcorp
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
+            nonummy nibh.
           </p>
         </div>
         <div class="v-right">
@@ -104,87 +140,135 @@
             Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
             nonummy nibh euismod tincidunt ut lapreet dolore magna aliquam erat
             volutpet, Ut wisi enim ad minim veniam, quis noslrud exerci taticn
-            ullamcorpbr Lorem ipsum dolor sit amet consectetur adipiscing elit
-            sed diam nonummy nibh euismod tincidunt ut lapreet dolore magna
-            aliquam erat volutpet, Ut wisi enim ad minim veniam, quis noslrud
-            exerci taticn ullamcorp <br />Lorem ipsum dolor sit amet consectetur
-            adipiscing elit sed diam nonummy nibh.
+            ullamcorp
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
+            nonummy nibh euismod tincidunt ut lapreet dolore magna aliquam erat
+            volutpet, Ut wisi enim ad minim veniam, quis noslrud exerci taticn
+            ullamcorp
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
+            nonummy nibh.
           </p>
         </div>
       </div>
     </section>
     <section id="gallery">
-      <div class="g-slider"><!-- caroussel --></div>
+      <h2>GALLERY</h2>
+      <div class="g-slider">
+        <!-- caroussel -->
+        <!-- <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/img/IMG03.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/IMG03.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/IMG03.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/IMG03.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/IMG03.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/IMG03.jpg" alt="image" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/IMG03.jpg" alt="image" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div> -->
       <div class="g-grid">
         <div class="grid-item">
-          <img src="" alt="" />
+          <img src="/img/IMG03.jpg" alt="" />
           <h3>LOREM IPSUM</h3>
         </div>
         <div class="grid-item">
-          <img src="" alt="" />
+          <img src="/img/IMG03.jpg" alt="" />
           <h3>LOREM IPSUM</h3>
         </div>
         <div class="grid-item">
-          <img src="" alt="" />
+          <img src="/img/IMG03.jpg" alt="" />
           <h3>LOREM IPSUM</h3>
         </div>
       </div>
     </section>
     <section id="hero2">
-      <h2>LOREM IPSUM DOLOR SIT AMET SED DIAM</h2>
+      <div class="hero2">
+      <h2>LOREM IPSUM <br>DOLOR SIT AMET <br>SED DIAM</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur. Aliquet nisl tortor pulvinar
         donec sagittis. Nunc non fusce est eget ac arcu massa in aliquam.
-      </p>
+      </p></div>
     </section>
     <section id="articles">
+      <h2>ARTICLES</h2>
       <div class="a-container">
-        <h2>ARTICLES</h2>
+        
         <div class="a-item">
           <h3>LOREM IPSUM</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
+            Lorem ipsum dolor sit amet consectetur <br>adipiscing elit sed diam
             nonummy nibh euismod
           </p>
+          <img src="/img/IMG03.jpg" alt="">
         </div>
         <div class="a-item">
           <h3>LOREM IPSUM</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
+            Lorem ipsum dolor sit amet consectetur <br>adipiscing elit sed diam
             nonummy nibh euismod
           </p>
+          <img src="/img/IMG03.jpg" alt="">
         </div>
       </div>
       <div class="get-start">
         <div class="get-start-container">
           <h4>LOREM IPSUM DOLOR SIT AMET</h4>
           <div class="get-start-input">
-            <input type="email" name="mail" id="mail" />
+            <input type="email" name="mail" id="mail"  placeholder="Lorem ipsum dolor sit" />
             <div class="btn-navy"><a>Get started</a></div>
           </div>
         </div>
       </div>
     </section>
     <section id="map">
-      <div class="m-container">
-        <img src="" alt="" />
-        <span>Lorem ipsum dolor sit</span>
-      </div>
+      <div class="map">
+        <div class="iframe">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44528.65126350306!2d4.729122348632812!3d45.77037449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7391fcf843%3A0xf4170493513eaa9f!2sCCI%20FORMATION%20PRO!5e0!3m2!1sja!2sfr!4v1689253136743!5m2!1sja!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="pin">
+      <img src="/img/pin.png" alt="" class="i-pin"> 
+      <span>Lorem ipsum dolor sit</span>
+    </div>
+  </div> 
+    
     </section>
     <footer>
       <div class="f-container">
         <div class="f-left">
           <div class="f-logo">
-            <img src="" alt="" />
+            <img src="/img/LOGO.png" alt="" />
             <p>YOU LOGO</p>
           </div>
-          <p>
+          <div>
+          <hr>
+          <p class="f-text">
             Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
             nonummy nibh euismod tincidunt ut laoreet dolore magna
-          </p>
+          </p></div>
         </div>
         <div class="f-right">
-          <div class="f-nav01">
+          <div class="f-nav">
             <h4>LOREM IPSUM</h4>
             <ul>
               <li>Lorem ipsum</li>
@@ -195,7 +279,7 @@
               <li>Nibh euismod</li>
             </ul>
           </div>
-          <div class="f-nav02">
+          <div class="f-nav">
             <h4>LOREM IPSUM</h4>
             <ul>
               <li>Lorem ipsum</li>
@@ -212,12 +296,36 @@
         <div class="get-start-container">
           <h4>LOREM IPSUM DOLOR SIT AMET</h4>
           <div class="get-start-input">
-            <input type="email" name="mail" id="mail" />
+            <input type="email" name="mail" id="mail"  placeholder="Lorem ipsum dolor sit" />
             <div class="btn-navy"><a>Get started</a></div>
           </div>
         </div>
       </div>
     </footer>
-    <script src=“https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js”></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          },
+        },
+      });
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
+
+        return direction;
+      }
+    </script> -->
   </body>
 </html>
