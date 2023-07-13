@@ -28,7 +28,7 @@
 
 /* Mixin pour les conteneurs de démarrage */
 @mixin get-start-container {
-  padding: 26px 60px 26px 60px;
+  padding: 26px 40px 26px 40px;
   text-align: center;
   @media (min-width: 1024px) {
     padding: 60px 200px 80px 200px;
@@ -41,7 +41,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
+  gap: 20px;
   @media (min-width: 1024px) {
     flex-direction: row;
   }
@@ -53,7 +53,7 @@
 
 /* Mixin pour les champs de saisie */
 @mixin input {
-  width: 80%;
+  width: 100%;
   font-size: 18px;
   height: 50px;
   border: none;
@@ -344,7 +344,10 @@ p {
       @include get-start-container;
 
       h4 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        @media (min-width: 1024px) {
+          margin-bottom: 40px;
+        }
       }
 
       .get-start-input {
@@ -596,7 +599,10 @@ p {
     }
 
     span {
-      display: none;
+      display: block;
+      @media (min-width: 1024px) {
+       display: none;
+      }
     }
   }
 }
@@ -606,6 +612,7 @@ footer {
   background-color: #d4e1ef;
   margin: 0;
   width: 100%;
+  padding: 60px 0 20px;
   @media (min-width: 1024px) {
     padding: 80px 0;
   }
@@ -626,42 +633,72 @@ footer {
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
-      gap: 120px;
+      @media (min-width: 1024px) {
+        gap: 120px;
+      }
 
       .f-logo {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         gap: 20px;
-
+        img {
+          width: 60px;
+          @media (min-width: 1024px) {
+            width: 100px;
+          }
+        }
         p {
           color: var(--black);
-          font-size: 42px;
+          font-size: 26px;
           font-weight: 800;
+          @media (min-width: 1024px) {
+            font-size: 42px;
+          }
         }
       }
 
       hr {
-        width: 72%;
         float: left;
         background-color: var(--black);
+        display: none;
+        @media (min-width: 1024px) {
+          width: 72%;
+        }
       }
       .f-text {
-        width: 72%;
+        display: none;
+        @media (min-width: 1024px) {
+          width: 72%;
+        }
       }
     }
     .f-left {
-      width: 50%;
+      width: 100%;
+      @media (min-width: 1024px) {
+        width: 50%;
+      }
     }
     .f-right {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: start;
       gap: 60px;
-      width: 50%;
+      margin: 60px 0;
+      width: 100%;
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        gap: 60px;
+        width: 50%;
+      }
 
       .f-nav {
-        text-align: left;
+        text-align: center;
+        @media (min-width: 1024px) {
+          text-align: left;
+        }
         h4 {
           margin: 0 0 40px 0;
         }
@@ -701,10 +738,27 @@ footer {
         input {
           @include input;
           background-color: #d3dfee;
-
-      
         }
       }
+    }
+  }
+
+  .m-hr {
+    display: block;
+    width: 90%;
+    margin: 40px auto 0;
+    background-color: var(--black);
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+  .m-f-text {
+    margin: 20px auto 0;
+    text-align: center;
+    width: 90%;
+    display: block;
+    @media (min-width: 1024px) {
+      display: none;
     }
   }
 }

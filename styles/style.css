@@ -309,7 +309,7 @@ p {
 }
 #features .get-start .get-start-container {
   background-color: #d4e1ef;
-  padding: 26px 60px 26px 60px;
+  padding: 26px 40px 26px 40px;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -318,13 +318,19 @@ p {
   }
 }
 #features .get-start .get-start-container h4 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  #features .get-start .get-start-container h4 {
+    margin-bottom: 40px;
+  }
 }
 #features .get-start .get-start-container .get-start-input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 @media (min-width: 1024px) {
   #features .get-start .get-start-container .get-start-input {
@@ -338,7 +344,7 @@ p {
   padding: 20px;
 }
 #features .get-start .get-start-container .get-start-input input {
-  width: 80%;
+  width: 100%;
   font-size: 18px;
   height: 50px;
   border: none;
@@ -522,7 +528,7 @@ p {
 }
 #articles .get-start .get-start-container {
   background-color: #d4e1ef;
-  padding: 26px 60px 26px 60px;
+  padding: 26px 40px 26px 40px;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -538,6 +544,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 @media (min-width: 1024px) {
   #articles .get-start .get-start-container .get-start-input {
@@ -551,7 +558,7 @@ p {
   padding: 20px;
 }
 #articles .get-start .get-start-container .get-start-input input {
-  width: 80%;
+  width: 100%;
   font-size: 18px;
   height: 50px;
   border: none;
@@ -598,13 +605,19 @@ p {
   display: block;
 }
 #map .map span {
-  display: none;
+  display: block;
+}
+@media (min-width: 1024px) {
+  #map .map span {
+    display: none;
+  }
 }
 
 footer {
   background-color: #d4e1ef;
   margin: 0;
   width: 100%;
+  padding: 60px 0 20px;
 }
 @media (min-width: 1024px) {
   footer {
@@ -629,39 +642,86 @@ footer .f-container .f-left {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  gap: 120px;
+}
+@media (min-width: 1024px) {
+  footer .f-container .f-left {
+    gap: 120px;
+  }
 }
 footer .f-container .f-left .f-logo {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 20px;
+}
+footer .f-container .f-left .f-logo img {
+  width: 60px;
+}
+@media (min-width: 1024px) {
+  footer .f-container .f-left .f-logo img {
+    width: 100px;
+  }
 }
 footer .f-container .f-left .f-logo p {
   color: var(--black);
-  font-size: 42px;
+  font-size: 26px;
   font-weight: 800;
 }
+@media (min-width: 1024px) {
+  footer .f-container .f-left .f-logo p {
+    font-size: 42px;
+  }
+}
 footer .f-container .f-left hr {
-  width: 72%;
   float: left;
   background-color: var(--black);
+  display: none;
+}
+@media (min-width: 1024px) {
+  footer .f-container .f-left hr {
+    width: 72%;
+  }
 }
 footer .f-container .f-left .f-text {
-  width: 72%;
+  display: none;
+}
+@media (min-width: 1024px) {
+  footer .f-container .f-left .f-text {
+    width: 72%;
+  }
 }
 footer .f-container .f-left {
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  footer .f-container .f-left {
+    width: 50%;
+  }
 }
 footer .f-container .f-right {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
   gap: 60px;
-  width: 50%;
+  margin: 60px 0;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  footer .f-container .f-right {
+    flex-direction: row;
+    gap: 60px;
+    width: 50%;
+  }
 }
 footer .f-container .f-right .f-nav {
-  text-align: left;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  footer .f-container .f-right .f-nav {
+    text-align: left;
+  }
 }
 footer .f-container .f-right .f-nav h4 {
   margin: 0 0 40px 0;
@@ -689,7 +749,7 @@ footer .get-start {
 }
 footer .get-start .get-start-container {
   background-color: #fff;
-  padding: 26px 60px 26px 60px;
+  padding: 26px 40px 26px 40px;
   text-align: center;
 }
 @media (min-width: 1024px) {
@@ -705,6 +765,7 @@ footer .get-start .get-start-container .get-start-input {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 @media (min-width: 1024px) {
   footer .get-start .get-start-container .get-start-input {
@@ -718,7 +779,7 @@ footer .get-start .get-start-container .get-start-input ::placeholder {
   padding: 20px;
 }
 footer .get-start .get-start-container .get-start-input input {
-  width: 80%;
+  width: 100%;
   font-size: 18px;
   height: 50px;
   border: none;
@@ -729,5 +790,27 @@ footer .get-start .get-start-container .get-start-input input {
     width: 60%;
     height: 72px;
     font-size: 22.6px;
+  }
+}
+footer .m-hr {
+  display: block;
+  width: 90%;
+  margin: 40px auto 0;
+  background-color: var(--black);
+}
+@media (min-width: 1024px) {
+  footer .m-hr {
+    display: none;
+  }
+}
+footer .m-f-text {
+  margin: 20px auto 0;
+  text-align: center;
+  width: 90%;
+  display: block;
+}
+@media (min-width: 1024px) {
+  footer .m-f-text {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
