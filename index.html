@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <title>Devoir CSS 02</title>
   </head>
   <body>
@@ -153,85 +157,78 @@
     </section>
     <section id="gallery">
       <h2>GALLERY</h2>
-      <div class="g-slider">
-        <!-- caroussel -->
-        <!-- <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="/img/IMG03.jpg" alt="image" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/IMG03.jpg" alt="image" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/IMG03.jpg" alt="image" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/IMG03.jpg" alt="image" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/IMG03.jpg" alt="image" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/IMG03.jpg" alt="image" />
-            </div>
-            <div class="swiper-slide">
-              <img src="/img/IMG03.jpg" alt="image" />
-            </div>
+      <div class="swiper slider1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="/img/IMG03.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="/img/IMG03.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="/img/IMG03.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="/img/IMG03.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="/img/IMG03.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="/img/IMG03.jpg" alt="" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="swiper slider2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <h3 class="m-g-h3">LOREM IPSUM</h3>
+            <img src="/img/IMG03.jpg" alt="" />
+            <h3 class="d-g-h3">LOREM IPSUM</h3>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div> -->
-      <div class="g-grid">
-        <div class="grid-item">
-          <img src="/img/IMG03.jpg" alt="" />
-          <h3>LOREM IPSUM</h3>
-        </div>
-        <div class="grid-item">
-          <img src="/img/IMG03.jpg" alt="" />
-          <h3>LOREM IPSUM</h3>
-        </div>
-        <div class="grid-item">
-          <img src="/img/IMG03.jpg" alt="" />
-          <h3>LOREM IPSUM</h3>
+          <div class="swiper-slide">
+            <h3 class="m-g-h3">LOREM IPSUM</h3>
+            <img src="/img/IMG03.jpg" alt="" />
+            <h3 class="d-g-h3">LOREM IPSUM</h3>
+          </div>
+          <div class="swiper-slide">
+            <h3 class="m-g-h3">LOREM IPSUM</h3>
+            <img src="/img/IMG03.jpg" alt="" />
+            <h3 class="d-g-h3">LOREM IPSUM</h3>
+          </div>
         </div>
       </div>
     </section>
     <section id="hero2">
       <div class="hero2">
-      <h2>LOREM IPSUM <br>DOLOR SIT AMET <br>SED DIAM</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur. Aliquet nisl tortor pulvinar
-        donec sagittis. Nunc non fusce est eget ac arcu massa in aliquam.
-      </p></div>
+        <h2>LOREM IPSUM <br />DOLOR SIT AMET <br />SED DIAM</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur. Aliquet nisl tortor pulvinar
+          donec sagittis. Nunc non fusce est eget ac arcu massa in aliquam.
+        </p>
+      </div>
     </section>
     <section id="articles">
       <h2>ARTICLES</h2>
       <div class="a-container">
-        
         <div class="a-item">
           <h3>LOREM IPSUM</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur <br>adipiscing elit sed diam
-            nonummy nibh euismod
+            Lorem ipsum dolor sit amet consectetur <br />adipiscing elit sed
+            diam nonummy nibh euismod
           </p>
-          <img src="/img/IMG03.jpg" alt="">
+          <img src="/img/IMG03.jpg" alt="" />
         </div>
         <div class="a-item a-item2">
           <h3>LOREM IPSUM</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur <br>adipiscing elit sed diam
-            nonummy nibh euismod
+            Lorem ipsum dolor sit amet consectetur <br />adipiscing elit sed
+            diam nonummy nibh euismod
           </p>
-          <img src="/img/IMG03.jpg" alt="">
+          <img src="/img/IMG03.jpg" alt="" />
         </div>
       </div>
       <div class="get-start">
         <div class="get-start-container">
           <h4>LOREM IPSUM DOLOR SIT AMET</h4>
           <div class="get-start-input">
-            <input type="email" name="mail" id="mail"  placeholder="Lorem ipsum dolor sit" />
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Lorem ipsum dolor sit"
+            />
             <div class="btn-navy"><a>Get started</a></div>
           </div>
         </div>
@@ -240,14 +237,21 @@
     <section id="map">
       <div class="map">
         <div class="iframe">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44528.65126350306!2d4.729122348632812!3d45.77037449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7391fcf843%3A0xf4170493513eaa9f!2sCCI%20FORMATION%20PRO!5e0!3m2!1sja!2sfr!4v1689253136743!5m2!1sja!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="pin">
-      <img src="/img/pin.png" alt="" class="i-pin"> 
-      <span>Lorem ipsum dolor sit</span>
-    </div>
-  </div> 
-    
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44528.65126350306!2d4.729122348632812!3d45.77037449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb7391fcf843%3A0xf4170493513eaa9f!2sCCI%20FORMATION%20PRO!5e0!3m2!1sja!2sfr!4v1689253136743!5m2!1sja!2sfr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="pin">
+          <img src="/img/pin.png" alt="" class="i-pin" />
+          <span>Lorem ipsum dolor sit</span>
+        </div>
+      </div>
     </section>
     <footer>
       <div class="f-container">
@@ -257,11 +261,12 @@
             <p>YOU LOGO</p>
           </div>
           <div>
-          <hr>
-          <p class="f-text">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna
-          </p></div>
+            <hr />
+            <p class="f-text">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna
+            </p>
+          </div>
         </div>
         <div class="f-right">
           <div class="f-nav">
@@ -292,19 +297,27 @@
         <div class="get-start-container">
           <h4>LOREM IPSUM DOLOR SIT AMET</h4>
           <div class="get-start-input">
-            <input type="email" name="mail" id="mail"  placeholder="Lorem ipsum dolor sit" />
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="Lorem ipsum dolor sit"
+            />
             <div class="btn-navy"><a>Get started</a></div>
           </div>
         </div>
       </div>
       <div>
-        <hr class="m-hr">
+        <hr class="m-hr" />
         <p class="f-text m-f-text">
           Lorem ipsum dolor sit amet consectetur adipiscing elit sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna
-        </p></div>
+        </p>
+      </div>
     </footer>
 
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
- </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="carousel.js"></script>
+  </body>
 </html>
