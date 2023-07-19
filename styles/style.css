@@ -57,6 +57,16 @@ h4 {
     font-size: 34px;
   }
 }
+h3 br,
+h4 br {
+  display: block;
+}
+@media (min-width: 768px) {
+  h3 br,
+  h4 br {
+    display: none;
+  }
+}
 
 p {
   font-size: 18px;
@@ -465,7 +475,7 @@ p {
   width: 100%;
 }
 .swiper .swiper-button-next {
-  margin-right: 8px;
+  display: none;
 }
 @media (min-width: 768px) {
   .swiper .swiper-button-next {
@@ -473,7 +483,7 @@ p {
   }
 }
 .swiper .swiper-button-prev {
-  margin-left: 8px;
+  display: none;
 }
 @media (min-width: 768px) {
   .swiper .swiper-button-prev {
@@ -492,12 +502,44 @@ p {
 
 .slider2 {
   width: 100%;
-  margin-top: 40px;
 }
 @media (min-width: 768px) {
   .slider2 {
+    width: 100%;
+    margin: 80px auto 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .slider2 {
     width: 88%;
     margin: 80px auto 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .slider2 .swiper-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .slider2 .swiper-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+.slider2 .swiper-wrapper .swiper-slide {
+  margin-top: 40px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .slider2 .swiper-wrapper .swiper-slide {
+    width: 30%;
   }
 }
 .slider2 .m-g-h3 {

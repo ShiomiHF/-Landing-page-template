@@ -108,6 +108,13 @@ h4 {
   @media (min-width: 768px) {
     font-size: 34px;
   }
+
+  br {
+    display: block;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }
 
 p {
@@ -468,13 +475,13 @@ p {
     }
   }
   .swiper-button-next {
-    margin-right: 8px;
+    display: none;
     @media (min-width: 768px) {
       margin-right: 40px;
     }
   }
   .swiper-button-prev {
-    margin-left: 8px;
+    display: none;
     @media (min-width: 768px) {
       margin-left: 40px;
     }
@@ -492,11 +499,40 @@ p {
 }
 .slider2 {
   width: 100%;
-  margin-top: 40px;
+
   @media (min-width: 768px) {
+    width: 100%;
+    margin: 80px auto 0 auto;
+  }
+  @media (min-width: 1024px) {
     width: 88%;
     margin: 80px auto 0 auto;
   }
+  .swiper-wrapper {
+    @media (min-width: 768px) {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+    }
+    @media (min-width: 1024px) {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .swiper-slide {
+      margin-top: 40px;
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 30%;
+      }
+    }
+  }
+
   .m-g-h3 {
     display: block;
     text-align: center;
