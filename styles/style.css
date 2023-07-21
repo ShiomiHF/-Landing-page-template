@@ -134,7 +134,7 @@ p {
 
 /* Section Hero */
 #hero {
-  background-image: url(./img/fond-1.jpg);
+  background-image: url("../img/fond-1.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -288,7 +288,7 @@ p {
   }
 }
 #features .f-container {
-  background-image: url(./img/fond2.jpg);
+  background-image: url("../img/fond2.jpg");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -563,7 +563,7 @@ p {
 
 /* Section Hero2 */
 #hero2 {
-  background-image: url(./img/fond3.jpg);
+  background-image: url("../img/fond3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
