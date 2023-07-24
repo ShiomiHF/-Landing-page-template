@@ -139,6 +139,9 @@ p {
   @include btn;
   background-color: var(--navy);
   color: #fff;
+  &:hover {
+    background-color: #725ca4;
+  }
 }
 
 .m-btn {
@@ -494,6 +497,7 @@ p {
   .swiper-button-prev {
     display: none;
     @media (min-width: 768px) {
+      display: block;
       margin-left: 40px;
     }
   }

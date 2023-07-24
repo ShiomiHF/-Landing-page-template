@@ -112,6 +112,9 @@ p {
     font-weight: 700;
   }
 }
+.btn-navy:hover {
+  background-color: #725ca4;
+}
 
 .m-btn {
   padding: 13px 38px;
@@ -499,6 +502,7 @@ p {
 }
 @media (min-width: 768px) {
   .swiper .swiper-button-prev {
+    display: block;
     margin-left: 40px;
   }
 }
